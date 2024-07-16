@@ -25,7 +25,7 @@ def download_image(url, folder):
         
         # Generate a unique filename using the URL
         filename = quote_plus(url)  # Encode URL to use as filename
-        filename = filename[:255]  # Limit filename length (optional)
+        filename = filename[:25]  # Limit filename length (optional)
         filename = f"{filename}.jpg"  # Add file extension if needed
         
         # Create the output path
