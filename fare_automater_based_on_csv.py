@@ -5,17 +5,17 @@ import psycopg2
 
 def update_trip_seats_fares(service_key, trip_id):
     # ClickHouse Configuration
-    CLICKHOUSE_HOST = "10.0.130.27"
+    CLICKHOUSE_HOST = "HOST_ADDRESS"
     CLICKHOUSE_PORT = 9000
     CLICKHOUSE_USER = "freshbus"
-    CLICKHOUSE_PASSWORD = "9JQH5i0yKj"
+    CLICKHOUSE_PASSWORD = "PASSWORD
     CLICKHOUSE_DATABASE = "freshbus_operations"
 
     # PostgreSQL Configuration
-    POSTGRES_HOST = "freshbus-postgres-dev-instance-1.ca3d0zcmduac.ap-south-1.rds.amazonaws.com"
+    POSTGRES_HOST = "HOST_URL
     POSTGRES_PORT = 5432
     POSTGRES_USER = "postgres"
-    POSTGRES_PASSWORD = "Nj}#X6:sZR]+|XH7l?WKL2zd%m!4"
+    POSTGRES_PASSWORD = "PASSWORD"
     POSTGRES_DB = "freshbus_db"
 
     # Initialize ClickHouse client
