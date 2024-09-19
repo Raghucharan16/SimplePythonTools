@@ -6,19 +6,19 @@ from datetime import datetime
 from clickhouse_driver import Client
 
 # ClickHouse Configuration
-CLICKHOUSE_HOST = "10.0.130.27"
+CLICKHOUSE_HOST = "host"
 CLICKHOUSE_PORT = 9000
-CLICKHOUSE_USER = "freshbus"
-CLICKHOUSE_PASSWORD = "9JQH5i0yKj"
-CLICKHOUSE_DATABASE = "freshbus_operations"
+CLICKHOUSE_USER = "user"
+CLICKHOUSE_PASSWORD = "password"
+CLICKHOUSE_DATABASE = "database"
 
 # PostgreSQL Connection Setup
 postgres_conn = psycopg2.connect(
-    host="freshbus-postgres-dev-instance-1.ca3d0zcmduac.ap-south-1.rds.amazonaws.com",
+    host="host",
     port=5432,
-    user="postgres",
-    password="Nj}#X6:sZR]+|XH7l?WKL2zd%m!4",
-    dbname="postgres"  
+    user="user",
+    password="password",
+    dbname="database"  
 )
 
 # Initialize ClickHouse client
